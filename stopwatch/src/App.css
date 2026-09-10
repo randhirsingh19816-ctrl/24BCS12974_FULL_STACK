@@ -1,0 +1,92 @@
+.stopwatch-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  padding: 32px 16px;
+}
+
+.stopwatch-card {
+  width: min(420px, 100%);
+  padding: 32px;
+  border-radius: 16px;
+  background: transparent;
+  border: 1px solid rgba(112, 112, 112, 0.18);
+  text-align: center;
+}
+
+.stopwatch-card h1 {
+  margin: 0 0 20px;
+  font-size: 2rem;
+  color: #1f1b4d;
+}
+
+.time-display {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  color: #3a2461;
+  margin-bottom: 32px;
+  padding: 24px 16px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid rgba(112, 112, 112, 0.16);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.control-button {
+  min-width: 92px;
+  padding: 14px 20px;
+  border: 1px solid rgba(112, 112, 112, 0.18);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.control-button:hover {
+  transform: translateY(-1px);
+}
+
+.control-button:active {
+  transform: translateY(0);
+}
+
+.start {
+  background: transparent;
+  color: #3a2461;
+  box-shadow: none;
+}
+
+.stop {
+  background: transparent;
+  color: #5a3e9a;
+}
+
+.reset {
+  background: transparent;
+  color: #000000;
+  border: 1px solid rgba(112, 112, 112, 0.18);
+}
+
+@media (max-width: 480px) {
+  .stopwatch-card {
+    padding: 24px;
+  }
+
+  .time-display {
+    font-size: 3rem;
+  }
+
+  .control-button {
+    flex: 1 1 100%;
+  }
+}
